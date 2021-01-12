@@ -1,0 +1,327 @@
+div{
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    color: #000;
+    transition: color .3s ease, background-color .3s ease;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+b, em, i, strong {
+    line-height: inherit;
+}
+
+
+div {
+    display: block;
+}
+
+
+li{ 	width:33.333%;
+      	float:left;
+      	padding:15px;
+    }
+  
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: brandon-grotesque,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.hub-page-content-fitting {
+    text-align: center;
+}
+
+.hub-page-content {
+    display: inline-block;
+    padding: 40px 60px 60px 60px;
+    background-color: white;
+    width: 100%;
+}
+
+.fitting-block {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 29.33%;
+    margin: 0 2% 40px 2%;
+    border-radius: 8px;
+    text-align: center;
+    height: 220px;
+    vertical-align: top;
+}
+
+
+.fitting-block .img-container {
+    height: 90px;
+    position: relative;
+}
+
+.fitting-block .img-container img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.fitting-block span {
+    width: 100%;
+    font-family: BrandonGrotesque-Regular,regular;
+    font-size: 20px;
+    color: #333;
+    margin-top: escription -%}
+    <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {{ content_for_header }}
+    {{ 'widefit.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body class="template-{{ template | split: '.' | first }}">
+    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      <h1>From LAYOUT</h1>   
+      {{ content_for_layout }}
+     
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    
+  
+<iframe src="https://f0be0bdf.ngrok.io/?token=shital"></iframe>
+  </body>
+</html>
+20px;
+    display: inline-block;
+}
+.calendly-widget-container a.btn {
+    font-family: BrandonGrotesque-Regular,regular;
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #696969;
+    height: 68px;
+    line-height: 68px;
+    width: 250px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.calendly-widget-container a.btn:hover {
+    border: 1px solid #ec7760;
+    background-color: #ec7760;
+    text-decoration: none;
+    color: white;
+}
+
+.hub-footer h3 {
+    text-align: center;
+    font-family: BrandonGrotesque-Regular,regular;
+    font-size: 19px;
+    color: black;
+    letter-spacescription -%}
+    <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {{ content_for_header }}
+    {{ 'widefit.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body class="template-{{ template | split: '.' | first }}">
+    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      <h1>From LAYOUT</h1>   
+      {{ content_for_layout }}
+     
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    
+  
+<iframe src="https://f0be0bdf.ngrok.io/?token=shital"></iframe>
+  </body>
+</html>
+ing: 0;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+h2 {
+    font-size: 1.0625rem;
+}
+h1, h2 {
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: brandon-grotesque,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+}
+
+
+.cms-page-view .col-main .std .hub-footer ul {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto !important;
+}
+
+.hub-footer {
+    background-color: white;
+    margin-top: 40px;
+    padding: 40px 40px 20px 40px;
+}
+
+
+.hub-footer h3 a {
+    color: #ec7760;
+    letter-spacing: 0;
+}
+
+
+
+.hub-footer ul li {
+    width: auto;
+    display: inline-block;
+    border: 1px solid #696969;
+    margin: 0 7px 22px 7px;
+    transition: background-color 0.6s;
+}
+
+.hub-footer ul li a:hover {
+    text-decoration: none;
+    color: white;
+
+}
+.images_ul{
+    li{
+    	width:33.333%;
+      	float:left;
+      	padding:15px;
+    }
+  }
+
+.hub-footer ul li:hover {
+    background-escription -%}
+    <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {{ content_for_header }}
+    {{ 'widefit.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body class="template-{{ template | split: '.' | first }}">
+    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      <h1>From LAYOUT</h1>   
+      {{ content_for_layout }}
+     
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    
+  
+<iframe src="https://f0be0bdf.ngrok.io/?token=shital"></iframe>
+  </body>
+</html>
+color: #ec7760;
+    color: white;
+}
+li {
+    font-size: inherit;
+}
+
+.hub-footer ul li div {
+    width: 100%;
+    display: inline-block;
+    padding: 15px 35px;
+}
+li {
+    font-size: inherit;
+}
+    
+    
+@media print, screen and (min-width: 40em){
+    h2 {
+        font-size: 1.125rem;
+    }}
+
+    @media (max-width: 1200px){
+.cms-page-view .col-main .std .hub-footer ul, .hub-page-h4 {
+    max-width: 100%;
+}}
+
+
+
+@media (max-width: 480px){
+    .fitting-block {
+        width: 100%;
+        margin: 10px 0;
+        height: auto;
+    }}
+    
+    @media (max-width: 640px){
+    .fitting-block {
+        width: 48%;
+    }}
+    @media (max-width: 768px){
+    .fitting-block {
+        padding: 30px 5px;
+        width: 40%;
+    }}
+    @media (max-width: 992px){
+    .fitting-block {
+        padding: 30px 5px;
+        width: 31.33%;
+        margin: 1%;
+    }
+    }
+    
+    
+    @media (max-width: 992px){
+    
+    .hub-footer {
+        padding: 30px 10px 20px 10px;
+    }
+    }
+
+.test_page{
+  .images_ul{
+    li{
+    	width:33.333%;
+      	float:left;
+      	padding:15px;
+    }
+  }
+}
+

@@ -1,0 +1,111 @@
+.footer-wrapper {
+  width: 100%;
+  padding-top: 70px;
+  font-family: "Avenir", sans-serif;
+
+  .footer-sec {
+    width: 80%;
+    // align-items: center;
+    // justify-content: center;
+    margin: 0 auto;
+
+    .contactus {
+      margin-bottom: 30px;
+      div {
+        width: 30%;
+        display: inline-block;
+        font-size: 16px;
+      }
+      .detailtitle {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 30px;
+
+        
+      }
+      p {
+        font-size: 14px;
+      }
+      .shop-btn {
+        border: 1px solid black;
+        font-size: 18px;
+        color: white;
+        background: black;
+        padding: 20px;
+        letter-spacing: 0.2;
+      }
+    }
+  }
+}
+//other section in contact us
+.other-sec {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+
+  .servicename {
+    width: 60%;
+    div {
+      width: 25%;
+      display: inline-block;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .servicelogo {
+    width: 40%;
+    img {
+      padding: 10px;
+    }
+  }
+}
+.copyright {
+  color: darkgray;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .footer-wrapper {
+    padding-top: 30px;
+  }
+  .footer-sec .contactus {
+    div {
+      width: 100%;
+      display: block;
+      font-size: 16px;
+    }
+    .shop-btn {
+      width: 100%;
+      font-size: 14px;
+      padding: 15px;
+    }
+    .detailtitle {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .other-sec {
+    display: block;
+    margin-bottom: 20px;
+
+    .servicename {
+      width: 100%;
+      div {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .servicelogo {
+      width: 100%;
+      text-align: center;
+      img {
+        padding: 20px;
+      }
+    }
+  }
+}

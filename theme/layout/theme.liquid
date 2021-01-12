@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="theme-color" content="{{ settings.color_button }}">
+ 		<title>Karen kane</title>
+   		 {{ content_for_header }}
+		{%- render 'head'-%}
+
+  </head>
+
+  <body class="template-{{ request.page_type | handle }}">
+    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+    	 {% section 'topbar' %}
+		  {{ content_for_layout }}
+     	
+    </main>
+  	{%- render 'foot' -%}
+  </body>
+</html>

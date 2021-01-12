@@ -1,0 +1,125 @@
+.product{   
+
+  .prd{
+    float:left;
+    width:28.33%;
+    margin:2%;
+    
+    
+    
+    .discount{
+
+      position: relative;
+      height: 87px;
+      width: 100px;
+      top: 41px;
+      left: 16px;
+      max-height:80%
+
+    }
+  }
+
+
+ @media only screen and (max-width: 1106px) and (min-width: 300px) {
+
+.product .paginate{
+  width: 30%;
+  margin: 0 auto;
+
+  font-size: 18px;
+}
+
+
+}
+  .txt{
+   height:auto; 
+
+   width:90%;
+   letter-spacing:.15rem;
+   text-align:center; 
+ }
+ .title{
+   font-weight: bold;
+   text-align: center;
+   position: relative;
+   top: 40px; 
+
+ }
+ .btn{
+   height:45px;
+   width:50%; 
+ }
+ img{
+   height:100%;
+   width:100%;
+
+
+
+ }
+
+
+
+ .addtocart{
+  background-color:#291A1B;
+
+}
+.buynow{
+ background-color:#B12929;
+ 
+}
+
+
+.prize{
+ color:red;
+ text-align:center;
+ margin:5px;
+}
+
+@media only screen and (max-width: 1130px) and (min-width: 367px) {
+
+  .btn{
+   font-size: 12px;
+
+ }
+}
+
+@media only screen and (max-width: 926px) and (min-width: 600px) {
+
+  .prd{
+
+
+    width:42.33%;
+    margin:2%;
+  }
+}
+
+@media only screen and (max-width: 725px)  {
+
+  .prd{
+
+
+    width:80.33%;
+    margin:9%;
+  }
+}
+
+.paginate{
+  width: 10%;
+  margin: 0 auto;
+
+  font-size: 18px;
+}
+.current{
+  font-size:22px;
+  color:blue;
+}
+
+
+.varient{
+  text-align:center; 
+  margin-bottom:10px;
+
+  
+}
+
+}

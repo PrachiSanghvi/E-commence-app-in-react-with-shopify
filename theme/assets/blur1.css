@@ -1,0 +1,10 @@
+.img_blur {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.blur-up.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}

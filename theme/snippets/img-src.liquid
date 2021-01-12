@@ -1,0 +1,41 @@
+  {% assign sizes = '180,360,480,765,900,1000,1200,1500,1900' | split:"," %}
+
+  {%- if asset_url -%}
+<img alt="{{ src_alt }}"
+       src="{{- src_name | asset_img_url:'80x' -}}"
+       data-sizes="auto"
+       data-src="{{- src_name | asset_img_url: 'master' -}}"
+       data-srcset="{%- for size in sizes -%}
+                    {%- assign size_x = size | append : 'x' -%}
+                    {{- src_name | asset_img_url: size_x }} {{size | append:'w' -}},
+                    {%- endfor -%}"  class="lazyload img_blur blur-up no_blur xs-show">
+{% assign asset_url=false %}
+     
+     
+{% elsif file_url %}
+     
+<img alt="{{ src_alt }}"
+       src="{{- src_name | file_img_url:'80x' -}}"
+       data-sizes="auto"
+       data-src="{{- src_name | file_img_url: 'master' -}}"
+       data-srcset="{%- for size in sizes -%}
+                    {%- assign size_x = size | append : 'x' -%}
+                    {{- src_name | file_img_url: size_x }} {{size | append:'w' -}},
+                    {%- endfor -%}"  class="lazyload img_blur blur-up no_blur xs-show">
+
+     {% assign file_url=false %}
+     
+    {%- else -%}
+     
+  
+<img alt="{{ src_alt }}"
+       src="{{- src_name | img_url:'80x' -}}"
+       data-sizes="auto"
+       data-src="{{- src_name | img_url: 'master' -}}"
+       data-srcset="{%- for size in sizes -%}
+                    {%- assign size_x = size | append : 'x' -%}
+                    {{- src_name | img_url: size_x }} {{size | append:'w' -}},
+                    {%- endfor -%}"  class="lazyload img_blur blur-up no_blur xs-show">
+{% assign img_url=false %}
+     
+         {%- endif -%}

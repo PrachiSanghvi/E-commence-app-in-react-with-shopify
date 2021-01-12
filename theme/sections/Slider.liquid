@@ -1,0 +1,60 @@
+
+<div class="slider-wrapper">
+  <div class="slider-lefttext">
+    <h1>Just For You</h1>
+    <p>Styles that we think you'll love</p>
+    <button class="shop-btn">SHOP NOW<i class="arrow right"></i></button>
+  </div>
+  <div class="imgslider">
+    <div>
+      <img src="{{ section.settings.slider1 | img_url: 'master' }}" alt="{{  section.settings.slider1 }}">
+      <p>Tropical Print Helter Dress</p>
+    </div>
+    <div>
+      <img src="{{ section.settings.slider2 | img_url: 'master' }}" alt="{{  section.settings.slider2 }}">
+      <p>Tropical Print Helter Dress</p>
+    </div>
+    <div>
+      <img src="{{ section.settings.slider3 | img_url: 'master' }}" alt="{{  section.settings.slider3 }}">
+      <p>Tropical Print Helter Dress</p>
+    </div>
+    <div>
+      <img src="{{ section.settings.slider4 | img_url: 'master' }}" alt="{{  section.settings.slider4 }}">
+      <p>Tropical Print Helter Dress</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "slider-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "slider1",
+      "label": "Image-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "slider2",
+      "label": "Image-2"
+    },
+    {
+      "type": "image_picker",
+      "id": "slider3",
+      "label": "Image-3"
+    },
+    {
+      "type": "image_picker",
+      "id": "slider4",
+      "label": "Image-4"
+    }
+  ],
+  "presets": [
+  {
+    "category": "Slider",
+    "name": "Slider"
+  }
+  ]
+}
+{% endschema %}

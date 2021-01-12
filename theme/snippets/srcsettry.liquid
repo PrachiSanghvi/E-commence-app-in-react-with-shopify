@@ -1,0 +1,47 @@
+{% assign sizes = '180,360,480,765,900,1000,1200,1500,1900' | split: "," %}
+{% if template == 'product.amp' or template contains 'amp' %}
+
+{% comment %} For AMP website{% endcomment %}
+<amp-img src="{{src_name | img_url:'grande'}}" width="{{amp_width}}" height="{{amp_height}}" layout="responsive" alt="{{src_alt}}"></amp-img>
+
+{% else %}
+
+  {% comment %} For normal website{% endcomment %}
+  {% if preload_src %}
+    {% assign base_classes =  "lazyload img_blur blur-up" %}
+  {% else %}
+    {% assign base_classes =  "lazyloadscroll img_blur blur-up" %}
+  {% endif %}
+    {%- if asset_url -%}
+
+    <img alt="{{src_alt}}" {%- if src_blur -%} src="{{- src_name | asset_img_url: '30x' | split:'?v' | first -}}" {%- else -%} 
+         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+         {%- endif -%} data-sizes="auto" data-src="{{- src_name | asset_img_url: 'master' | split:'?v' | first -}}"
+         data-srcset=" {%- for size in sizes -%}
+    {%- assign size_x = size| append : 'x' -%}
+    {{- src_name | asset_img_url: size_x  | split:'?v'  | first }} {{size | append:'w' -}},
+    {%- endfor -%}" class="{{base_classes}}{% unless src_class == blank %} {{src_class}}{% endunless %}">
+
+    {% elsif file_url %}
+    <img alt="{{src_alt}}" {%- if src_blur -%}
+         src="{{- src_name | file_img_url: '30x' | format:'pjpg' | split:'?v' | first -}}" 
+         {%- else -%} {%- unless no_base -%} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+         {%- endunless -%} {%- endif -%} 
+         data-sizes="auto"
+         data-src="{{- src_name | file_img_url: 'master' | split:'?v' | first -}}" 
+         data-srcset="
+    {%- for size in sizes -%}
+    {%- assign size_x = size| append : 'x' -%}
+    {{- src_name | file_img_url: size_x | format:'pjpg' | split:'?v'  | first }} {{size | append:'w' -}},
+    {%- endfor -%}" class="{{base_classes}} no_blur{% unless src_class == blank %} {{src_class}}{% endunless %}">
+
+    {%- else -%}
+
+    <img alt="{{src_alt}}" {%- if src_blur -%} src="{{- src_name | img_url: '30x' | format:'pjpg' | split:'?v' | first -}}" {%- else -%} {%- unless no_base -%} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" {%- endunless -%} {%- endif -%} data-sizes="auto" data-src="{{- src_name | img_url: 'master' | split:'?v' | first -}}" data-srcset="
+    {%- for size in sizes -%}
+    {%- assign size_x = size| append : 'x' -%}
+    {{- src_name | img_url: size_x | format:'pjpg' | split:'?v'  | first }} {{size | append:'w' -}},
+    {%- endfor -%}" class="{{base_classes}} no_blur{% unless src_class == blank %} {{src_class}}{% endunless %}">
+
+    {%- endif -%}
+{% endif %}

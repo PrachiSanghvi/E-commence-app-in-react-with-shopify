@@ -1,0 +1,203 @@
+.navbar-wrapper {
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .sidespace {
+    padding: 20px 10px;
+  }
+  .navbar-logo {
+    width: 15%;
+    img {
+      width: 80%;
+    }
+  }
+  .navbar-menu {
+    width: 60%;
+    position: relative;
+    ul li {
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+     /* Submenu -sideimg */
+    .navbar-menuimg {
+      width: 450px;
+      float: left;
+      img {
+        display: block;
+        height: 280px;
+      }
+    }
+  }
+}
+.navbar-menu-list li {
+  display: inline-block;
+  padding: 0px 15px;
+  color: #979797;
+}
+a:focus {
+  color: black;
+}
+
+.navbar-megamenu {
+  display: none;
+  position: absolute;
+  top: 103%;
+  width: 1000px;
+  background: white;
+  z-index: 1;
+  font-size: 18px;
+}
+.navbar-megasubmenu {
+  width: 550px;
+  float: left;
+  ul {
+    /*   width:80%; */
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 40%;
+      padding: 10px 10px;
+    }
+  }
+}
+
+
+.navbar_icon {
+  display: none;
+}
+.cart_bag {
+  display: none;
+}
+
+/* Rightside icon */
+.navbar-wrapper .navbar-icon {
+  width: 25%;
+  text-align: end;
+  position: relative;
+}
+
+.navbar-icon .icons {
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+}
+.mybag {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #979797;
+}
+
+/* Search option box */
+.searchoption {
+  display: none;
+  width: 40%;
+  top: 100%;
+  background: white;
+  padding: 20px;
+  position: absolute;
+  z-index: 3;
+}
+.searchoption .search-icon {
+  float: left;
+  width: 20px;
+  padding: 13px 22px;
+}
+.searchoption input {
+  float: left;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+.searchoption .cancel-icon {
+  float: right;
+  width: 15px;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .search-image {
+    display: none;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-wrapper {
+    height: 70px;
+    width: 100%;
+    padding: 40px 20px;
+
+    .navbar-logo {
+      width: 60%;
+      margin-left: 50px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .navbar_icon {
+    display: inline-block;
+    position: relative;
+    .mybag {
+      display: none;
+    }
+  }
+  .cart_bag {
+    display: inline-block;
+  }
+
+  .main-nav {
+    width: 476px;
+    height: 300px;
+    background: white;
+    top: 58px;
+    left: -20px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    .navbar-menu-list {
+      padding: 0px;
+      // position: relative;
+    }
+    .navbar-submenu-list {
+      width: 60%;
+    }
+    ul li {
+      list-style: none;
+      line-height: 20px;
+      padding-top: 15px;
+      padding-left: 30px;
+      display: block;
+      a {
+        color: black;
+      }
+    }
+
+    .navbar_icon .cancel-icon {
+      display: none;
+    }
+
+    .shop-btn .right {
+      transform: rotate(-310deg);
+    }
+    .navbar-megamenu {
+      position: absolute;
+      top: 20%;
+      display: none;
+    }
+    .navbar-megasubmenu {
+      background-color: black;
+      ul li a {
+        color: white;
+      }
+    }
+  }
+}

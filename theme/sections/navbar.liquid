@@ -1,0 +1,153 @@
+<div class="navbar-wrapper">
+   <div class="navbar_icon">
+    <a href="#"> <img class="navbar-image" src="{{ section.settings.navbar_icon |  img_url: '50x50' }}" alt="{{section.settings.navbar_icon}}"></a>
+    <a href="#"><img class="cancel-icon" src="{{ section.settings.cancel | img_url: 'icon' }}" alt="{{ "cancel icon" }}" /></a>
+    <div class="main-nav">
+      <ul class="navbar-menu-list">
+        {%- for menu in linklists.karen-kane.links -%}
+            <li class="navbar-submenu-list {{ menu.title }}">
+             <a href="{{ menu.url }}">{{menu.title}}</a>
+       
+             <button class="shop-btn"><i class="arrow right"></i></button>
+             <div class="navbar-megamenu">
+               <div class="navbar-megasubmenu">
+                 <ul>
+                   {%- for child_menu in menu.links -%}
+                   <li>
+                     <a href="{{child_menu.url}}">{{child_menu.title}}</a>
+                   </li>
+                   {%- endfor -%}
+                 </ul>
+                </div>
+             </div>
+              </li>
+             {%- endfor -%}
+        </ul>
+    </div>
+  </div>
+  <!-- <div class="cross-icon">
+    <a href="#"> <img src="{{ section.settings.cancel-icon | img_url:'compact' }}" alt="{{section.settings.cross_icon}}"></a>
+  </div> -->
+<!--   logo -->
+  <div class="navbar-logo sidespace">
+    <a href="#"> <img src="{{ section.settings.logo | img_url:'compact' }}" alt="{{section.settings.logo}}"></a>
+  </div>
+
+<!--   Middle menu -->
+  <div class="navbar-menu sidespace">
+     <ul class="navbar-menu-list">
+		{%- for menu in linklists.karen-kane.links -%}
+       <li class="navbar-submenu-list {{ menu.title }}">
+         <a href="{{ menu.url }}">{{menu.title}}</a>
+         <div class="navbar-megamenu">
+           <div class="navbar-megasubmenu">
+             <ul>
+               {%- for child_menu in menu.links -%}
+               <li>
+                 <a href="{{child_menu.url}}">{{child_menu.title}}</a>
+               </li>
+               {%- endfor -%}
+             </ul>
+           </div>
+           <div class="navbar-menuimg">
+             <img src="{{ section.settings.menu-sideimg|  img_url: 'master' }}" alt="{{section.settings.menu-sideimg}}">
+           </div>
+         </div>
+          </li>
+         {%- endfor -%}
+    </ul>
+  </div>
+  
+<!--   search option -->
+   <div class="searchoption">
+          <img class="search-icon" src="{{ section.settings.search | img_url: 'icon' }}" alt="{{ "search icon" }}" />
+          <input type="text" placeholder="Search Keywords" name="search">
+          <img class="cancel-icon" src="{{ section.settings.cancel | img_url: 'icon' }}" alt="{{ "cancel icon" }}" />
+   </div>
+  
+<!--   right icons -->
+  <div class="navbar-icon sidespace">
+         <div class="search-icons icons">
+            <img class="search-image" src="{{ section.settings.search-icon |  img_url: '16x16' }}" alt="{{section.settings.search-icon}}">
+        </div>
+    	<div class="user-icon icons">
+           <img class="search-image" src="{{ section.settings.user-icon | img_url: '16x16' }}" alt="{{ section.settings.user-icon }}">
+          </div>
+    		<div class="mail-icon icons">
+           <img class="search-image" src="{{ section.settings.email-icon | img_url: '16x16' }}" alt="{{ section.settings.user-icon }}">
+          </div>
+          <div class="wishlist-icon icons">
+            <img class="search-image" src="{{ section.settings.wishlist-icon | img_url: '16x16' }}" alt="{{ section.settings.wishlist-icon }}">
+          </div>
+    	  <div class="mybag icons">
+            My Bag 0
+          </div>
+  </div>
+   <div class="cart_bag">
+      <img class="cartbag-image" src="{{ section.settings.cart_bag |  img_url: '32x32' }}" alt="{{section.settings.cart_bag}}">
+  </div>
+</div>
+
+{% schema %}
+{
+	"name":"navbar",
+	"settings":[
+	{
+		"id":"logo",
+		"type":"image_picker",
+		"label":"Logo-img"
+	},
+	 {
+        "type": "image_picker",
+        "id": "search-icon",
+        "label": "Search-Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "user-icon",
+        "label": "User-Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "email-icon",
+        "label": "Email-Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "wishlist-icon",
+        "label": "Heart-Image"
+      },
+	  {
+        "type": "image_picker",
+        "id": "menu-sideimg",
+        "label": "Menu-SideImage"
+      },
+  		{
+        "type": "image_picker",
+        "id": "cancel",
+        "label": "Cancel"
+      },
+  	  {
+        "type": "image_picker",
+        "id": "search",
+        "label": "Search"
+      },
+	 {
+        "type": "image_picker",
+        "id": "navbar_icon",
+        "label": "Navbar Ico"
+      },
+		 {
+        "type": "image_picker",
+        "id": "cart_bag",
+        "label": "Cart Bag Icon"
+      }
+      ],
+      "presets": [
+          {
+            "category": "Navbar",
+            "name": "menu"
+          }
+        ] 
+      }
+{% endschema %}

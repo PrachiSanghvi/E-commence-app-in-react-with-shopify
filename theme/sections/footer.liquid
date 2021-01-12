@@ -1,0 +1,84 @@
+<div class="footer-wrapper">
+ <div class="footer-sec">
+    <div class="contactus">
+        <div>
+            <h1>Contact Us</h1>
+            <p><span class="detailtitle">EMAIL </span> support@karenkane.zendesk.com</p>
+            <p><span class="detailtitle">PHONE</span> 855-655-8974</p>
+        </div>
+        <div>
+            <p><span class="detailtitle">CUSTOMER SERVICE  HOURS</span></p>
+            <p>M-F from 8am-5pm PST</p>
+         </div>
+        <div>
+            <button class="shop-btn">Join Our Newsletter</button>
+        </div>
+    </div>
+    <hr>
+    <div class="other-sec">
+        <div class="servicename">
+        <div>
+            <p>The karen kane story</p>
+            <p>Design & made in LA</p>
+            <p>Press</p>
+            <p>Gift Cards</p>
+        </div>
+        <div>
+            <p>Shipping & Returns</p>
+            <p>Fit Guide</p>
+            <p>Corporarte Responsibility</p>
+            <p>Career Oppotunity</p>
+        </div>
+        <div>
+            <p>Customer Service</p>
+            <p>Store Locator</p>
+            <p>Military Discount</p>
+            <p>Teacher Discount</p>
+        </div>
+    </div>
+    <div class="servicelogo">
+        <div>
+          <img src="{{ section.settings.fb_icon | img_url:'master' }}" alt="Facebook">
+          <img src="{{ section.settings.twitter_icon | img_url:'master' }}" alt="Facebook">
+          <img src="{{ section.settings.pinterest_icon | img_url:'master' }}" alt="Facebook">
+          <img src="{{ section.settings.tumblr_icon | img_url:'master' }}" alt="Facebook">
+          <img src="{{ section.settings.instagram_icon | img_url:'master' }}" alt="Facebook">
+        </div>
+        <div class="copyright">@2019 Karen kane. All right reserved</div>
+    </div>
+        
+    </div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Footer Icons",
+    "settings": [
+	 {
+        "type": "image_picker",
+        "id": "fb_icon",
+        "label": "fb_icon"
+      },
+      {
+        "type": "image_picker",
+        "id": "twitter_icon",
+        "label": "twitter_icon"
+      },
+      {
+        "type": "image_picker",
+        "id": "pinterest_icon",
+        "label": "Pinterest"
+      },
+      {
+        "type": "image_picker",
+        "id": "tumblr_icon",
+        "label": "tumblr_icon"
+      },
+      {
+        "type": "image_picker",
+        "id": "instagram_icon",
+        "label": "instagram_icon"
+      }
+    ]
+}
+{% endschema %}

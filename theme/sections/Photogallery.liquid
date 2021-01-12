@@ -1,0 +1,51 @@
+<div class="image-gallery-wrapper">
+    <div class="gallery-text">
+      <h1>#karenkane</h1>
+      <button class="shop-btn">SHOP FEED<i class="arrow right"></i></button>
+    </div>
+    <div class="gallery-container">
+        <div class="main-image">
+              <img src="{{ section.settings.main-image | img_url: 'master' }}" alt="{{ section.settings.main-image }}">
+        </div>
+        <div class="image-collection">
+              {% for block in section.blocks %}
+                      <div class="gallery-image">
+                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" />
+                      </div>
+              {% endfor %}
+        </div>
+    </div>
+  </div>
+  
+  {% schema %}
+    {
+      "name":"image-gallery",
+      "settings": [
+      {
+        "type": "image_picker",
+        "id": "main-image",
+        "label": "Main-image"
+      }
+    ],
+      "blocks": [
+        {
+          "type": "image-gallery",
+          "name": "image-gallery",
+          "settings": [
+            {
+              "id": "image",
+              "type": "image_picker",
+              "label": "Images"
+            }
+          ]
+        }
+      ],
+      "presets": [
+      {
+        "category": "Photogalley",
+        "name": "Photogallery"
+      }
+      
+    ]
+    }
+  {% endschema %}

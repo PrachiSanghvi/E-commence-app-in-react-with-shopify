@@ -1,0 +1,833 @@
+h4 {
+  position: absolute;
+    top: 15%;
+    left: 50%;
+  transform: translate(-30%, -30%);
+  color: yellow;
+}
+h4 {
+    display: inline-block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.btn{
+
+.main1 {
+ position: absolute;
+  
+  
+  width: 451px;
+  height: 580px;
+  background-color:black;
+  position: absolute;
+  
+  left: 30%;
+  
+  border-left: 58px solid #cccccc;
+  border-top: 30px solid #cccccc;
+  border-right: 51PX solid #cccccc ;
+
+  border-bottom: 50px solid #cccccc;
+}
+}
+.number {
+  background-color: #cccccc   ;
+  font-weight: bold;
+}
+.symbol1{
+  background-color: #AAABAA;
+}
+.symbol {
+  background-color:#FB9500;
+}
+.gray:hover {
+  background-color: #e0e0e0;
+}
+.blue:hover {
+  background-color: #03a9f4;
+}
+
+#wth{
+  width:221px;
+  height: 91px;
+}
+.parent{
+ overflow: auto;
+  margin-top: 10px;
+}
+
+
+
+body{
+margin-left:2px;
+  padding:20px 30px;
+
+}
+
+
+
+
+#wrapper{
+    width:100%;
+    margin: 0px;
+} 
+
+img{
+    width:100%;
+    
+    
+}
+.slick-slide{
+
+position:relative;
+}
+.slick-dots li button:before{
+    font-size:15px;
+    float: left;
+    align-content: left;
+}
+
+.slick-dots{
+    bottom: 20%;
+    text-align: right;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: #f3c701fa;
+} 
+
+.slick-dots li button::before{
+    opacity: .35;
+    color: rgb(2, 241, 74);
+}
+.slick-prev {
+    left: 55px;
+}
+
+.slick-prev, .slick-next {
+
+    font-size: 2px;
+/* 
+reset css */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    width: 60px;        
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    background: transprerent;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1; 
+    opacity: 1;
+    color: rgba(247, 250, 234, 0.993);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev {
+    right: 15px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 2px;
+    line-height: 56px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 60px;
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    z-index: 10;
+    background: transprerent;
+}
+
+.slick-next::before {
+    content: ">";
+}
+
+.slick-prev::before {
+    content: "<";
+}
+  color:blue;
+  font-size:20px;
+}
+
+#spanResult,#spanResult2,#spanResult3,#spanResult4,#spanResult5,#spanResult6,#spanResult7,#spanResult8,#spanResult9{
+ color:red; 
+  font-size:large;
+}
+
+
+.main1 {
+ position: absolute;
+  
+  
+  width: 451px;
+  height: 580px;
+  background-color:black;
+  position: absolute;
+  
+  left: 30%;
+  
+  border-left: 58px solid #cccccc;
+  border-top: 30px solid #cccccc;
+  border-right: 51PX solid #cccccc ;
+
+  border-bottom: 50px solid #cccccc;
+}
+.number {
+  background-color: #cccccc   ;
+  font-weight: bold;
+}
+.symbol1{
+  background-color: #AAABAA;
+}
+.symbol {
+  background-color:#FB9500;
+}
+.gray:hover {
+  background-color: #e0e0e0;
+}
+.blue:hover {
+  background-color: #03a9f4;
+}
+
+#wth{
+  width:221px;
+  height: 91px;
+}
+.parent{
+ overflow: auto;
+  margin-top: 10px;
+}
+
+
+
+body{
+margin-left:2px;
+  padding:20px 30px;
+
+}
+
+
+
+
+#wrapper{
+    width:100%;
+    margin: 0px;
+} 
+
+img{
+    width:100%;
+    
+    
+}
+.slick-slide{
+
+position:relative;
+}
+.slick-dots li button:before{
+    font-size:15px;
+    float: left;
+    align-content: left;
+}
+
+.slick-dots{
+    bottom: 20%;
+    text-align: right;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: #f3c701fa;
+} 
+
+.slick-dots li button::before{
+    opacity: .35;
+    color: rgb(2, 241, 74);
+}
+.slick-prev {
+    left: 55px;
+}
+
+.slick-prev, .slick-next {
+
+    font-size: 2px;
+/* 
+reset css */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    width: 60px;        
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    background: transprerent;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1; 
+    opacity: 1;
+    color: rgba(247, 250, 234, 0.993);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev {
+    right: 15px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 2px;
+    line-height: 56px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 60px;
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    z-index: 10;
+    background: transprerent;
+}
+
+.slick-next::before {
+    content: ">";
+}
+
+.slick-prev::before {
+    content: "<";
+}
+.btn:hover{
+
+  background-color: #F510C9;
+
+}
+h3{
+  color:#921A40;
+}
+
+input{
+  border:1.5px solid #10F5DB;
+   border-radius:18px;
+  height:30px;
+  width:300px;
+  color:brown;
+  font-weight: 300;
+/*   padding:2px; */
+  
+}
+
+
+.textview {
+  width: 437px;
+  height: 92px;
+  margin:0px;
+  font-size: 25px;
+  padding: 5px;
+  background-color: black;    
+  border: 2px;
+  border-color: black;
+  color: white;
+  border-radius: 20px;
+}                                                                           
+
+.button {
+  width: 110px;
+  height: 91px;
+  border-color: b
+
+.main1 {
+ position: absolute;
+  
+  
+  width: 451px;
+  height: 580px;
+  background-color:black;
+  position: absolute;
+  
+  left: 30%;
+  
+  border-left: 58px solid #cccccc;
+  border-top: 30px solid #cccccc;
+  border-right: 51PX solid #cccccc ;
+
+  border-bottom: 50px solid #cccccc;
+}
+.number {
+  background-color: #cccccc   ;
+  font-weight: bold;
+}
+.symbol1{
+  background-color: #AAABAA;
+}
+.symbol {
+  background-color:#FB9500;
+}
+.gray:hover {
+  background-color: #e0e0e0;
+}
+.blue:hover {
+  background-color: #03a9f4;
+}
+
+#wth{
+  width:221px;
+  height: 91px;
+}
+.parent{
+ overflow: auto;
+  margin-top: 10px;
+}
+
+
+
+body{
+margin-left:2px;
+  padding:20px 30px;
+
+}
+
+
+
+
+#wrapper{
+    width:100%;
+    margin: 0px;
+} 
+
+img{
+    width:100%;
+    
+    
+}
+.slick-slide{
+
+position:relative;
+}
+.slick-dots li button:before{
+    font-size:15px;
+    float: left;
+    align-content: left;
+}
+
+.slick-dots{
+    bottom: 20%;
+    text-align: right;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: #f3c701fa;
+} 
+
+.slick-dots li button::before{
+    opacity: .35;
+    color: rgb(2, 241, 74);
+}
+.slick-prev {
+    left: 55px;
+}
+
+.slick-prev, .slick-next {
+
+    font-size: 2px;
+/* 
+reset css */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    width: 60px;        
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    background: transprerent;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1; 
+    opacity: 1;
+    color: rgba(247, 250, 234, 0.993);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev {
+    right: 15px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 2px;
+    line-height: 56px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 60px;
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    z-index: 10;
+    background: transprerent;
+}
+
+.slick-next::before {
+    content: ">";
+}
+
+.slick-prev::before {
+    content: "<";
+};
+  cursor: pointer;
+
+}
+
+
+// .main1 {
+//  position: absolute;
+  
+  
+//   width: 451px;
+//   height: 580px;
+//   background-color:black;
+//   position: absolute;
+  
+//   left: 30%;
+  
+//   border-left: 58px solid #cccccc;
+//   border-top: 30px solid #cccccc;
+//   border-right: 51PX solid #cccccc ;
+
+//   border-bottom: 50px solid #cccccc;
+// }
+// .number {
+//   background-color: #cccccc   ;
+//   font-weight: bold;
+// }
+// .symbol1{
+//   background-color: #AAABAA;
+// }
+// .symbol {
+//   background-color:#FB9500;
+// }
+// .gray:hover {
+//   background-color: #e0e0e0;
+// }
+// .blue:hover {
+//   background-color: #03a9f4;
+// }
+
+// #wth{
+//   width:221px;
+//   height: 91px;
+// }
+// .parent{
+//  overflow: auto;
+//   margin-top: 10px;
+// }
+
+
+
+body{
+margin-left:2px;
+  padding:20px 30px;
+
+}
+
+
+
+
+#wrapper{
+    width:100%;
+    margin: 0px;
+} 
+
+img{
+    width:100%;
+    
+    
+}
+.slick-slide{
+
+position:relative;
+}
+.slick-dots li button:before{
+    font-size:15px;
+    float: left;
+    align-content: left;
+}
+
+.slick-dots{
+    bottom: 20%;
+    text-align: right;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: #f3c701fa;
+} 
+
+.slick-dots li button::before{
+    opacity: .35;
+    color: rgb(2, 241, 74);
+}
+.slick-prev {
+    left: 55px;
+}
+
+.slick-prev, .slick-next {
+
+    font-size: 2px;
+}
+.main1 {
+ position: absolute;
+  
+  
+  width: 451px;
+  height: 580px;
+  background-color:black;
+  position: absolute;
+  
+  left: 30%;
+  
+  border-left: 58px solid #cccccc;
+  border-top: 30px solid #cccccc;
+  border-right: 51PX solid #cccccc ;
+
+  border-bottom: 50px solid #cccccc;
+}
+.number {
+  background-color: #cccccc   ;
+  font-weight: bold;
+}
+.symbol1{
+  background-color: #AAABAA;
+}
+.symbol {
+  background-color:#FB9500;
+}
+.gray:hover {
+  background-color: #e0e0e0;
+}
+.blue:hover {
+  background-color: #03a9f4;
+}
+
+#wth{
+  width:221px;
+  height: 91px;
+}
+.parent{
+ overflow: auto;
+  margin-top: 10px;
+}
+
+
+
+body{
+margin-left:2px;
+  padding:20px 30px;
+
+}
+
+
+
+
+#wrapper{
+    width:100%;
+    margin: 0px;
+} 
+
+img{
+    width:100%;
+    
+    
+}
+.slick-slide{
+
+position:relative;
+}
+.slick-dots li button:before{
+    font-size:15px;
+    float: left;
+    align-content: left;
+}
+
+.slick-dots{
+    bottom: 20%;
+    text-align: right;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: #f3c701fa;
+} 
+
+.slick-dots li button::before{
+    opacity: .35;
+    color: rgb(2, 241, 74);
+}
+.slick-prev {
+    left: 55px;
+}
+
+.slick-prev, .slick-next {
+
+    font-size: 2px;
+/* 
+reset css */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    width: 60px;        
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    background: transprerent;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 2vw;
+    line-height: 1; 
+    opacity: 1;
+    color: rgba(247, 250, 234, 0.993);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev {
+    right: 15px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 2px;
+    line-height: 56px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 60px;
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    z-index: 10;
+    background: transprerent;
+}
+
+.slick-next::before {
+    content: ">";
+}
+
+.slick-prev::before {
+    content: "<";
+}
+/* 
+reset css */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+/* */
+    width: 60px;        
+    height: 260px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: rgb(126, 0, 230);
+    border: none;
+    outline: none;
+    background: transprerent;
+}
+ */

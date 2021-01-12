@@ -1,0 +1,87 @@
+.prd{
+  float:left;
+  
+  width:28.33%;
+  margin:2%;
+}
+
+.txt{
+ height:100px; 
+  width:90%;
+  letter-spacing:.15rem;
+text-align:center; 
+}
+.title{
+    font-weight: bold;
+  text-align:center; 
+}
+.btn{
+ height:45px;
+  width:50%;
+ 
+  
+}
+img{
+ height:100%;
+  width:100%;
+}
+
+.img{
+  text-align:center; 
+  margin:auto;
+  height:215px;
+  width:300px;
+
+}
+.addtocart{
+    background-color:#291A1B;
+
+}
+.buynow{
+   background-color:#B12929;
+ 
+}
+
+
+.prize{
+ color:red; 
+}
+
+@media only screen and (max-width: 1130px) and (min-width: 927px) {
+  
+  .btn{
+   font-size: 12px;
+    
+}
+}
+
+@media only screen and (max-width: 926px) and (min-width: 600px) {
+
+.prd{
+
+  
+  width:42.33%;
+  margin:2%;
+}
+}
+
+@media only screen and (max-width: 725px)  {
+
+.prd{
+
+  
+  width:80.33%;
+  margin:9%;
+}
+}
+
+  .pg{
+        width: 10%;
+        margin: 0 auto;
+        
+        font-size: 18px;
+  }
+        .current{
+          font-size:22px;
+          color:blue;
+        }

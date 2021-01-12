@@ -1,0 +1,51 @@
+<div class="videoplay-wrapper">
+     <img src="{{ section.settings.videoplay-img1 | img_url:'master' }}" alt="{{section.settings.collection-img1}}">
+     <div class="textoverlay-text">
+      <h1>{{ section.settings.videoplay-head}}</h1>
+      <p>{{ section.settings.videoplay-para}}</p>
+      <a href="{{section.settings.videoplay-link}}">{{section.settings.videoplay-text}}</a>
+    </div>
+     <a class="playbtn">PLAY</a>
+</div>
+
+{% schema %}
+  { "name": "Videoplay Image",
+    "settings": [
+	 {
+        "type": "image_picker",
+        "id": "videoplay-img1",
+        "label": "videoplay-img1"
+      },
+      
+      {
+        "id": "videoplay-head",
+        "type": "text",
+        "label": "videoplay-heading",
+        "default": "Summer Fresh"
+      },
+      {
+        "id": "videoplay-para",
+        "type": "text",
+        "label": "videoplay-para",
+        "default": "Summer Fresh"
+      },
+      {
+        "id": "videoplay-text",
+        "type": "text",
+        "label": "videop-text",
+        "default": "SHOP COLLECTION"
+      },
+      {
+        "id": "videoplay-link",
+        "type": "url",
+        "label": "First Button link"
+      }
+  ],
+  "presets": [
+  {
+    "category": "Videoplayer",
+    "name": "Videoplayer"
+  }
+  ]
+  }
+{% endschema %}
