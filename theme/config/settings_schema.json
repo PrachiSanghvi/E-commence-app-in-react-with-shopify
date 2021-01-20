@@ -8,17 +8,90 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
-    "name": "Colors",
+    "name": "General Settings",
     "settings": [
       {
         "type": "header",
         "content": "Global"
       },
       {
-        "type":"color",
-        "id":"body_color",
-        "label":"Body color",
-        "default":"#ffffff"
+        "type": "color",
+        "id": "body_color",
+        "label": "Paragraph color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Heading color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "btn_text_color",
+        "label": "Button Text Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "btn_bg_color",
+        "label": "Button Bg Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "img_text_color",
+        "label": "Image overlay Text Color",
+        "default": "#ffffff"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Headings and buttons"
+      },
+      {
+        "type": "font_picker",
+        "id": "header_font",
+        "label": "Header Font",
+        "default": "work_sans_n6"
+      },
+      {
+        "type": "font_picker",
+        "id": "paragraph_font",
+        "label": "Paragraph Font",
+        "default": "work_sans_n6"
+      },
+      {
+        "type": "font_picker",
+        "id": "banner_font",
+        "label": "Banner Font",
+        "default": "work_sans_n6"
+      },
+      {
+        "type": "font_picker",
+        "id": "slider_font",
+        "label": "Slider Font",
+        "default": "work_sans_n6"
+      },
+      {
+        "type": "font_picker",
+        "id": "footer_font",
+        "label": "Footer Font",
+        "default": "work_sans_n6"
+      },
+      {
+        "type": "range",
+        "id": "font_size",
+        "min": 12,
+        "max": 36,
+        "step": 1,
+        "unit": "px",
+        "label": "Heading base size",
+        "default": 20
       }
     ]
   }

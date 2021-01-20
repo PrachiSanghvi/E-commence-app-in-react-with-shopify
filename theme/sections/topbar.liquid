@@ -1,35 +1,33 @@
 <style>
-  .topbar-wrapper
+  /* .topbar-wrapper
   {
-     /* background:{{section.settings.top_color}}; */
-  }
+     /* background:{{section.settings.top_color}}; 
+  } */
   
 </style>
 <div class="topbar-wrapper">
-  <h1 class="top-title">{{section.settings.top-title}}</h1>
-<!--   <button class='test-btn-1'>Button 1</button>
-  <button class='test-btn-2'>Button 1</button>-->
+  <p class="top-title">{{section.settings.top-title}}</p>
 </div> 
 {% schema %}
   {
-  	"name":"topbar",
+  	"name":"Topbar",
   	"settings":[
   	{
   		"id":"top_color",
   		"type":"color",
-  		"label":"topbar_background",
+  		"label":"Topbar_background",
   		"default":"#ffffff"
   	},
   	{
   		"id":"top-title",
   		"type":"text",
-  		"label":"topbar_title",
+  		"label":"Topbar_title",
   		"default":"FREE SHIPPING ON NEW ARRIVALS"
   	}
   ],
   "presets": [
       {
-        "category": "topbar-wrapper",
+        "category": "Topbar",
         "name": "text"
       }
     ]

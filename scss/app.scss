@@ -1,14 +1,16 @@
 @import "variable";
 @import "global";
-@import "homepage";
 @import "topbar";
 @import "navbar";
-@import "gallery";
 @import "img-collection";
-@import "img-gallery";
+@import "gallery";
 @import "videoplay";
 @import "slider";
+@import "img-gallery";
 @import "footer";
+@import "productSlider";
+@import url('theme/assets/slick.scss');
+@import url('theme/assets/slick-theme.scss');
 
 
 

@@ -1,6 +1,30 @@
+{% assign header_font = settings.header_font %}
+{% assign paragraph_font = settings.paragraph_font %}
+{% assign banner_font = settings.banner_font %}
+{% assign slider_font = settings.slider_font %}
+{% assign footer_font = settings.footer_font %}
 <style>
+    {{ header_font | font_face: font_display: 'swap'  }}
+    {{ paragraph_font | font_face: font_display: 'swap'  }}
+    {{ banner_font | font_face: font_display: 'swap'  }}
+    {{ slider_font | font_face: font_display: 'swap'  }}
+    {{ footer_font | font_face: font_display: 'swap'  }}
+   
     :root {
-        --body_color: {{settings.body_color}};
+        --body_color: {{ settings.body_color }}; 
+        --text_color:{{ settings.text_color }};
+        --btn_text_color:{{settings.btn_text_color }};
+        --btn_bg_color:{{settings.btn_bg_color }};
+        --img_text_color:{{settings.img_text_color}};
 
+        
+        --header_font: {{ header_font.family }},{{header_font.fallback_families}};
+        --paragraph_font: {{ paragraph_font.family }},{{paragraph_font.fallback_families}};
+        --banner_font: {{ banner_font.family }},{{banner_font.fallback_families}};
+        --slider_font: {{ slider_font.family }},{{slider_font.fallback_families}};
+          --footer_font: {{ footer_font.family }},{{footer_font.fallback_families}};
+        
+        --font_size:{{ settings.font_size }}px;
+        --align:{{ settings.align }};
     }
 </style>

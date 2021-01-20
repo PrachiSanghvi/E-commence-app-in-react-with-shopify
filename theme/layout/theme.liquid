@@ -6,6 +6,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="theme-color" content="{{ settings.color_button }}">
+  <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
+
  		<title>Karen kane</title>
    		 {{ content_for_header }}
 		{%- render 'head'-%}
@@ -14,7 +16,12 @@
 
   <body class="template-{{ request.page_type | handle }}">
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
-    	 {% section 'topbar' %}
+       {% section 'topbar' %}
+       <header>
+        {% section 'navbar' %}
+       
+         </header>
+
 		  {{ content_for_layout }}
      	
     </main>

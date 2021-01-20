@@ -1,51 +1,53 @@
 <div class="videoplay-wrapper">
-     <img src="{{ section.settings.videoplay-img1 | img_url:'master' }}" alt="{{section.settings.collection-img1}}">
+     <!-- <img src="{{ section.settings.videoplay-img1 | img_url:'master' }}" alt="{{section.settings.collection-img1}}"> -->
+     <iframe src="//player.vimeo.com/video/352334950?loop=1&amp;" 
+     title="Video iframe" allow="autoplay" width="100%" height="1000" frameborder="0" allowfullscreen="" data-ready="true" class="videoplay"></iframe>
      <div class="textoverlay-text">
-      <h1>{{ section.settings.videoplay-head}}</h1>
-      <p>{{ section.settings.videoplay-para}}</p>
-      <a href="{{section.settings.videoplay-link}}">{{section.settings.videoplay-text}}</a>
+      <p class="title">{{ section.settings.videoplay-head}}</h1>
+      <p class="subtitle">{{ section.settings.videoplay-para}}</p>
+      <a class="btn" href="{{section.settings.videoplay-link}}">{{section.settings.videoplay-text}}</a>
     </div>
      <a class="playbtn">PLAY</a>
 </div>
 
 {% schema %}
-  { "name": "Videoplay Image",
+  { "name": "Video",
     "settings": [
 	 {
         "type": "image_picker",
         "id": "videoplay-img1",
-        "label": "videoplay-img1"
+        "label": "video"
       },
       
       {
         "id": "videoplay-head",
         "type": "text",
-        "label": "videoplay-heading",
+        "label": "Video-title",
         "default": "Summer Fresh"
       },
       {
         "id": "videoplay-para",
         "type": "text",
-        "label": "videoplay-para",
+        "label": "Video-subtitle",
         "default": "Summer Fresh"
       },
       {
         "id": "videoplay-text",
         "type": "text",
-        "label": "videop-text",
+        "label": "Video Button",
         "default": "SHOP COLLECTION"
       },
       {
         "id": "videoplay-link",
         "type": "url",
-        "label": "First Button link"
+        "label": "Video Button link"
       }
   ],
-  "presets": [
-  {
-    "category": "Videoplayer",
-    "name": "Videoplayer"
-  }
-  ]
+      "presets": [
+      {
+        "category": "Video",
+        "name": "Video"
+      }
+    ]
   }
 {% endschema %}

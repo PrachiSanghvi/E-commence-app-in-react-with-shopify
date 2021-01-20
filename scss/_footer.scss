@@ -1,18 +1,16 @@
 .footer-wrapper {
   width: 100%;
-  padding-top: 70px;
-  font-family: "Avenir", sans-serif;
+  padding-top: 20px;
+  font-family: $footer_font;
 
   .footer-sec {
-    width: 80%;
-    // align-items: center;
-    // justify-content: center;
-    margin: 0 auto;
+    width: 83%;
+    margin: 0 125px;
 
     .contactus {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       div {
-        width: 30%;
+        width: 33%;
         display: inline-block;
         font-size: 16px;
       }
@@ -20,21 +18,27 @@
         font-size: 16px;
         font-weight: bold;
       }
-      h1 {
-        font-size: 30px;
-
+     .title {
+        
+        color:$text_color;
+        font-size: 38px;
+        margin-top: 25px;
+        margin-bottom: 15px;
         
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
       }
       .shop-btn {
-        border: 1px solid black;
+        border: none;
         font-size: 18px;
         color: white;
         background: black;
-        padding: 20px;
-        letter-spacing: 0.2;
+        padding: 20px 60px;
+      }
+      .shop
+      {
+        text-align: end;
       }
     }
   }
@@ -46,17 +50,20 @@
   align-items: center;
 
   .servicename {
-    width: 60%;
+    width: 80%;
     div {
-      width: 25%;
+      width: 28%;
       display: inline-block;
     }
     p {
-      font-size: 12px;
+      font-size: 16px;
+    line-height: 2.0;
     }
   }
   .servicelogo {
-    width: 40%;
+    width: 25%;
+    text-align: center;
+    margin-top: 50px;
     img {
       padding: 10px;
     }
@@ -64,14 +71,16 @@
 }
 .copyright {
   color: darkgray;
-  margin-top: 10px;
+  margin-top: 30px;
+  font-size: 15px;
 }
 
 @media (max-width: 767px) {
   .footer-wrapper {
     padding-top: 30px;
-  }
+  
   .footer-sec .contactus {
+    margin-bottom: 40px;
     div {
       width: 100%;
       display: block;
@@ -88,24 +97,44 @@
       font-weight: normal;
     }
   }
+}
   .other-sec {
     display: block;
     margin-bottom: 20px;
 
     .servicename {
       width: 100%;
+      
       div {
         width: 100%;
         display: block;
       }
+      p {
+        font-size: 12px;
+        
+    }
     }
 
-    .servicelogo {
-      width: 100%;
-      text-align: center;
+    .other-sec .servicelogo {
+      width: 25%;
+    text-align: center;
+      @media (max-width: 767px) {
+          width: 100%;
+    
+      }
       img {
         padding: 20px;
       }
+    }
+  }
+}
+@media (min-width: 767px) and (max-width:1028)
+{
+  .footer-sec .contactus {
+    div {
+      width: 100%;
+      display: block;
+      font-size: 16px;
     }
   }
 }

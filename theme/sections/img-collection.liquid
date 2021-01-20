@@ -3,87 +3,72 @@
     <img src="{{ section.settings.collection-img1 | img_url:'master' }}" alt="{{section.settings.collection-img1}}">
     <div class="textoverlay">
        <div class="textoverlay-text">
-      <h1>{{ section.settings.firstimg-head}}</h1>
-      <p>{{ section.settings.firstimg-para}}</p>
-      <a href="{{section.settings.firstbtn-link}}">{{section.settings.firstbtn-text}}</a>
+      <p class="title">{{ section.settings.firstimg-head}}</p>
+      <p class="subtitle">{{ section.settings.firstimg-para}}</p>
+      <a class="btn" href="{{section.settings.firstbtn-link}}">{{section.settings.firstbtn-text}}</a>
     </div>
   </div>
-  </div>
-  <div class="secimg imgsize">
-       <img src="{{ section.settings.collection-img2 | img_url:'master' }}" alt="{{section.settings.collection-img2}}">
- 		<div class="textoverlay-text">
-      <h1>{{ section.settings.secondimg-head}}</h1>
-      <p>{{ section.settings.secondimg-para}}</p>
-      <a href="{{section.settings.secondbtn-link}}">{{section.settings.secondbtn-text}}</a>
-  </div>
 </div>
+</div>
+  
 
 {% schema %}
   {
-    "name": "Image Collection",
+    "name": "Banner",
     "settings": [
-	 {
+	     {
         "type": "image_picker",
         "id": "collection-img1",
-        "label": "collection-img1"
-      },
-      {
-        "type": "image_picker",
-        "id": "collection-img2",
-        "label": "collection-img2"
+        "label": "Banner Image"
       },
       {
         "id": "firstimg-head",
         "type": "text",
-        "label": "firstimg-heading",
+        "label": "Banner Title",
         "default": "Summer Fresh"
       },
       {
         "id": "firstimg-para",
-        "type": "text",
-        "label": "firstimg-para",
+        "type": "textarea",
+        "label": "Banner Subtitle",
         "default": "Summer Fresh"
       },
       {
         "id": "firstbtn-text",
         "type": "text",
-        "label": "firstbtn-text",
+        "label": "Banner Button",
         "default": "SHOP COLLECTION"
       },
       {
         "id": "firstbtn-link",
         "type": "url",
-        "label": "First Button link"
+        "label": "Banner button URL"
       },
       {
-        "id": "secondimg-head",
-        "type": "text",
-        "label": "Secondimg-heading",
-        "default": "Our Best Dresses"
-      },
-	
-		{
-        "id": "secondimg-para",
-        "type": "text",
-        "label": "secondimg-para",
-        "default": "Summer Fresh"
-      },
-      {
-        "id": "secondbtn-text",
-        "type": "text",
-        "label": "Second Button text",
-        "default": "SHOP NOW"
-      },
-      {
-        "id": "secondbtn-link",
-        "type": "url",
-        "label": "Second Button link"
-      }
+        "type": "select",
+        "id": "align",
+        "label": "Text align",
+        "options": [
+          {
+            "value": "start",
+            "label": "Start"
+          },
+          {
+          "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "end",
+            "label": "End"
+          }
+        ],
+        "default": "center"
+     }
     ],
     "presets": [
     {
-      "category": "img-collection",
-      "name": "img-collection"
+      "category": "Banner",
+      "name": "Banner"
     }
   ] 
 }

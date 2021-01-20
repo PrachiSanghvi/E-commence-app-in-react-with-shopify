@@ -1,33 +1,51 @@
 .navbar-wrapper {
   display: flex;
-  padding: 0 40px;
+  padding: 0px 0px;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  // justify-content: center;
+  font-weight: 500;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55px;
+  z-index: 10000;
 
   .sidespace {
-    padding: 20px 10px;
+    padding: 0px 0px;
   }
   .navbar-logo {
-    width: 15%;
+    width: 12%;
+    margin-left: 40px;
+    box-sizing: border-box;
     img {
-      width: 80%;
+      width: 100%;
     }
   }
+
   .navbar-menu {
     width: 60%;
     position: relative;
-    ul li {
-      font-size: 20px;
-      letter-spacing: 0.5px;
+    box-sizing: border-box;
+    ul {
+      padding-left: 22px;
+      li {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        a
+        {
+          color:white;
+        }
+      }
     }
-     /* Submenu -sideimg */
+    /* Submenu -sideimg */
     .navbar-menuimg {
       width: 450px;
       float: left;
       img {
         display: block;
         height: 280px;
+        width: 453px;
       }
     }
   }
@@ -35,7 +53,8 @@
 .navbar-menu-list li {
   display: inline-block;
   padding: 0px 15px;
-  color: #979797;
+  // color:black;
+  // color: #979797;
 }
 a:focus {
   color: black;
@@ -48,11 +67,14 @@ a:focus {
   width: 1000px;
   background: white;
   z-index: 1;
-  font-size: 18px;
-}
+  font-size: 16px;
+  transform: translate(-50%);
+  left: 50%;
+
 .navbar-megasubmenu {
   width: 550px;
   float: left;
+
   ul {
     /*   width:80%; */
     margin: 10px auto;
@@ -60,11 +82,15 @@ a:focus {
     flex-wrap: wrap;
     li {
       width: 40%;
-      padding: 10px 10px;
+      padding: 20px 20px;
+      a
+      {
+        color: black;
+      }
     }
   }
 }
-
+}
 
 .navbar_icon {
   display: none;
@@ -75,50 +101,58 @@ a:focus {
 
 /* Rightside icon */
 .navbar-wrapper .navbar-icon {
-  width: 25%;
+  width: 24%;
   text-align: end;
   position: relative;
+  // padding-left: 65px;
+  box-sizing: border-box;
 }
 
 .navbar-icon .icons {
   display: inline-block;
-  padding: 20px;
+  padding-right: 26px;
   position: relative;
+}
+.navbar-icon .icons svg {
+  fill: #fff !important;
 }
 .mybag {
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: #979797;
+  color: #ffffff;
 }
 
 /* Search option box */
 .searchoption {
   display: none;
-  width: 40%;
-  top: 100%;
-  background: white;
-  padding: 20px;
-  position: absolute;
-  z-index: 3;
+  width: 45%;
+    top: 100%;
+    background: white;
+    padding: 0px;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%);
+    left: 50%;
 }
 .searchoption .search-icon {
   float: left;
-  width: 20px;
-  padding: 13px 22px;
+    width: 20px;
+    padding: 25px 22px;
 }
 .searchoption input {
   float: left;
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  outline: none;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    height: 60px;
+    outline: none;
+    width: 500px;
 }
 .searchoption .cancel-icon {
   float: right;
-  width: 15px;
-  padding: 20px;
+    width: 15px;
+    padding: 27px;
 }
 
 @media (max-width: 767px) {
@@ -137,7 +171,7 @@ a:focus {
       width: 60%;
       margin-left: 50px;
       img {
-        width: 100%;
+        width: 170px;
       }
     }
   }
@@ -148,13 +182,16 @@ a:focus {
     .mybag {
       display: none;
     }
+    .cancel-icon {
+      display: none;
+    }
   }
   .cart_bag {
     display: inline-block;
   }
 
   .main-nav {
-    width: 476px;
+    width: 380px;
     height: 300px;
     background: white;
     top: 58px;
@@ -168,29 +205,30 @@ a:focus {
       // position: relative;
     }
     .navbar-submenu-list {
-      width: 60%;
-    }
-    ul li {
-      list-style: none;
-      line-height: 20px;
-      padding-top: 15px;
-      padding-left: 30px;
-      display: block;
-      a {
-        color: black;
+      width: 100%;
+
+      ul li {
+        list-style: none;
+        line-height: 20px;
+        padding-top: 15px;
+        display: block;
+        color: #ffffff;
+        a {
+          color: #ffffff;
+        }
       }
     }
-
-    .navbar_icon .cancel-icon {
-      display: none;
-    }
-
-    .shop-btn .right {
-      transform: rotate(-310deg);
+    .shop-btn {
+      float: right;
+      .right {
+        transform: rotate(-310deg);
+      }
     }
     .navbar-megamenu {
       position: absolute;
       top: 20%;
+      // left: 50%;
+
       display: none;
     }
     .navbar-megasubmenu {

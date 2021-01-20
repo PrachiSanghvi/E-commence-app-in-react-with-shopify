@@ -1,44 +1,76 @@
-.img-collection .imgsize {
-  max-width: 100%;
-  height: auto;
-  position: relative;
+.img-collection {
+  width: 100%;
+  font-family: $banner_font;
+  .imgsize {
+    max-width: 100%;
+    position: relative;
 
-  .imgsize img {
-    width: 100%;
-    display: block;
+    img {
+      width: 100%;
+      display: block;
+    }
+    .textoverlay {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-weight: 700;
+   
+
+    /* Text-overlay */
+
+    .textoverlay-text {
+      position: absolute;
+      top: 39%;
+      right: 6%;
+      text-align:end;
+      color: $img_text_color;
+      @media (max-width: 767px) {
+        top: 20%;
+        text-align: center;
+      }
+      .title {
+        
+        font-size: 45px;
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+        
+      }
+      .subtitle{
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      p {
+        margin: 10px 0px 0px 0px;
+        @media (max-width: 767px) {
+          color: white;
+        font-size: 14px;
+        }
+      }
+      a {
+        padding: 16px 30px;
+        color: $btn_text_color;
+        font-size: 12px;
+        font-weight: 500;
+        border: none;
+        background:$btn_bg_color;
+        text-decoration: none;
+       
+        @media (max-width: 767px) {
+          color: white;
+          background: black;
+        }
+      }
+      .btn
+      {
+        margin-top: 20px;
+        margin-right: 40px;
+      }
+    }
   }
-  .textoverlay {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  /* Text-overlay */
-
-  .textoverlay-text {
-    position: absolute;
-    top: 40%;
-    right: 8%;
-    text-align: end;
-    color: #ffffff;
-
-    h1 {
-      font-size: 47px;
-    }
-    p {
-      margin: 15px 0px 30px 0px;
-    }
-    a {
-      padding: 12px 25px;
-      color: #5e5e5e;
-      font-size: 12px;
-      font-weight: 600;
-      border: none;
-      background: #ffffff;
-      text-decoration: none;
-    }
   }
 }

@@ -1,3 +1,23 @@
-body{
-    background: $body_color;
+body,
+h1,h2,h3,h4,h5,h6 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $header_font;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+p{
+    font-family: $paragraph_font;
+}
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
 }

@@ -1,0 +1,36 @@
+<div class="section-wrapper">
+        {% if section.blocks.size > 0 %}
+        <div class="slider_wrap" data-slick='{"autoplay": {{ section.settings.carousel_autoplay }}, "autoplaySpeed": {{ section.settings.autoplay_speed }}, "dots": {{ section.settings.carousel_dots }}, "arrows": {{ section.settings.carousel_arrows }}}'>
+        
+          {% for block in section.blocks %}
+            <div class="slider_item">
+                <div class="slider_img_wrap">
+                  <!-- <img src="{{ block.settings.slide_img | img_url: 'original' }}" alt="" class="slider_img"> -->
+                  <!-- {% for media in product.media %}
+                             {% include 'media' %}
+                    {% endfor %} -->
+                </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+          <div class="content-wrapper">
+            <h1 id="id"></h1>
+            <h1 class="heading" id="heading"></h1>
+            <p id="price"></p>
+            <p id="sku"></p>
+            <p id="desc"></p>
+
+            Color:<p id="color"></p>
+            <!-- <p><input type="radio" id="allcolor" value="allcolor"></p> -->
+
+            Size:<p id="allsize"></p>
+              <!-- <p><input type="radio" id="size" value="allsize"></p> -->
+
+            <p>Quantity</p>
+            <input type="number" id="Quantity" name="quantity" value="1" min="1" class="js-quantity-selector">
+
+            <p><input type="submit" value="Add to cart" class="addtocart"></p>
+            <p><input type="button" value="Buy it now" class="buynow"></p>
+            
+          </div>
+      </div>

@@ -1,15 +1,19 @@
- .topbar-wrapper {
-    text-align: center;
-    width: 100%;
-    //background: $color-body;
-  
-    .top-title {
-      font-size: 14px;
-      padding: 14px 0px;
-      color: #3a3737;
-      font-weight: 100;
-      letter-spacing: 2.6px;
-      line-height: 15px;
-      
-    }
+.topbar-wrapper {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  .top-title {
+    padding: 7px 0px 4px;
+    color: $text_color;
+    font-weight: 100;
+    letter-spacing: 2.0px;
+    line-height: 24px;
+    font-size: $font_size;
+    font-family: $header_font;
+    margin: 0;
+   font-weight: unset;
+    padding-left: 1px;
+    text-transform: uppercase;
   }
+  
+}
